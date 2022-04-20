@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/CK - Copy.js"></script>
+        <script src="../js/Data.js"></script>
+    </head>
+    <style>
+        body{
+            background-color: azure;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #2891f3;
+            z-index: 1;
+            list-style: none;
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    </style>
+    
+<body>
+    <!-- Header -->
+    <div>  
+        <header>
+            <div class="col-md-12" style="background-color:  #6c757d;" >
+                <div class="col-md-6">
+                    <nav class="navbar-collapse">
+                        <ul class="navbar-nav nav " style="margin-top: 10px;">
+                            <li style="margin-top: -15px;"><a href="../html/Home.html" id="dn"><img src="../image/Logo.jpg"  alt="" width="200px" height="100px"></a></li>
+                            <li> <a class="dropdown-toggle" data-toggle="dropdown" style="color:black;"><img src="../image/product.png" alt="">Sản Phẩm
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu ">
+                                    <li><a href="../html/index.html" target="blank">Samsung</a></li>
+                                    <li><a href="../html/Oppo.html" target="blank">Oppo</a></li>
+                                    <li><a href="../html/Iphone.html" target="blank">Iphone</a></li>
+                                    <li><a href="../html/Realme.html" target="blank">Realme</a></li>
+                                    <li><a href="../html/Vivo.html" target="blank">Vivo</a></li>
+                                </ul></li>
+                            <li><a href="../html/GioiThieu.html" target="_blank" style="color: black;"><img src="../image/introduct.png" alt="">Giới thiệu</a></li>
+                            <li><a href="../html/Contact.html" target="_blank" style="color: black;"><img src="../image/contact.png" alt="">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-6 float-sm-right form-group">
+                    <nav style="float: right;" class="navbar-collapse">
+                        <ul class="navbar-nav nav "style="margin-top: 10px;">
+                            <li style="margin-top: 10px;"><form class="form-inline float-sm-right">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="txtMasp">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btnTim"><img src="../image/search.png" alt=""></button>
+                            </form>
+                            </li>
+                            <li><a href="../html/DangKy.html" target="_blank" id="btnDangKy" style="color: black;"><img src="../image/register.png" alt="">Đăng ký</a></li>
+                            <li><a href="#" id="btnLogIn" style="color: black;"><img src="../image/login.png" alt="">Đăng nhập</a></li>
+                            <li><a href="../html/GioHang.html" target="_blank" id="btnShop" style="color: black;" target="blank"><img src="../image/shop.png" alt="">Giỏ hàng</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+           <div class="btn-group btn-group-justified" style="background-color: #333;"  >
+            <a href="../html/Iphone.html" target="blank" class="btn btn-block " style="color: #ffff; font-size: 20px;">Iphone</a>
+            <a href="../html/Samsung.html" target="blank" class="btn btn-block" style="color: #ffff;font-size: 20px;">SamSung</a>
+            <a href="../html/Oppo.html" target="blank" class="btn btn-block" style="color: #ffff;font-size: 20px;">Oppo</a>
+            <a href="../html/Realme.html" target="blank" class="btn btn-block" style="color: #ffff;font-size: 20px;">Realme</a>
+            <a href="../html/Vivo.html" target="blank" class="btn btn-block" style="color: #ffff;font-size: 20px;">Vivo</a>
+           </div>
+        </header>       
+    </div>
+    <!-- Body -->
+    <div  class="container-fluid" style="width: 100%; background-color:azure;">
+        <div id="carousel-simple" class="carousel slide col-md-8 col-md-offset-2" data-ride="carousel" >
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-simple" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-simple" data-slide-to="1"></li>
+            <li data-target="#carousel-simple" data-slide-to="2"></li>
+            <li data-target="#carousel-simple" data-slide-to="3"></li>
+            <li data-target="#carousel-simple" data-slide-to="4"></li>
+            <li data-target="#carousel-simple" data-slide-to="5"></li>   
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="../image/SPNoiBat/sp1.PNG" alt="" >
+            </div>
+            <div class="item">
+              <img src="../image/SPNoiBat/sp2.PNG" alt="">
+            </div>
+            <div class="item">
+              <img src="../image/SPNoiBat/sp3.PNG" alt="">
+            </div>
+            <div class="item">
+                <img src="../image/SPNoiBat/sp4.PNG" alt="">
+              </div>
+              <div class="item">
+                <img src="../image/SPNoiBat/sp5.PNG" alt="">
+              </div>
+              <div class="item">
+                <img src="../image/SPNoiBat/sp6.PNG" alt="">
+              </div>
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-simple" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </a>
+          <a class="right carousel-control" href="#carousel-simple" role="button" data-slide="next">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <hr style="height:3px;border:none;color:#333;background-color:#333;" />
+      <!-- Sản phẩm bán chạy-->
+    <div class="container">
+        <h2>SẢN PHẨM BÁN CHẠY:</h2>
+        <div class="row"> 
+            <div class="col-sm-6 col-md-3"> 
+                <div class="products"><img style="width: 100%" src="../image/SanPhamBanChay/IP13.jpeg" alt=""> 
+                    <h4 class="text-center" style="color:black;"><bold>IPhone 13 Pro Max 128GB</bold></h4><br>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Graphite</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Sierra blue</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Alpine green</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Gold</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Silver</a>
+                    <h3 class="text-center" style="color: rgb(224, 61, 20);">30.490.000 ₫</h3>
+                    <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                    <button type="button"  class="btn btn-success">Trả góp</button>
+                </div> 
+            </div> 
+            <div class="col-sm-6 col-md-3"> 
+                <div class="products"><img style="width: 100%" src="../image/SanPhamBanChay/OPPO-A94-Pur-11.jpg" alt=""> 
+                    <h4 class="text-center" style="color: black;"><bold>OPPO A94</bold></h4><br>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Purple</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                    <h3 class="text-center" style="color: rgb(224, 61, 20);">5.990.000 ₫</h3>
+                    <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                    <button type="button"  class="btn btn-success">Trả góp</button>
+                </div> 
+            </div>
+            <div class="col-sm-6 col-md-3"> 
+                <div class="products"><img style="width: 100%" src="../image/SanPhamBanChay/Realme-C21Y-blk-1.jpg" alt=""> 
+                    <h4 class="text-center" style="color: black;"><bold>Realme C21Y (4-64GB)</bold></h4><br>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Blue</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                    <h3 class="text-center" style="color: rgb(224, 61, 20);">3.290.000 ₫</h3>
+                    <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                    <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                </div> 
+            </div> 
+            <div class="col-sm-6 col-md-3"> 
+                <div class="products"><img style="width: 100%" src="../image/SanPhamBanChay/SS-Galaxy-S21Plus-Purl-1.jpg" alt=""> 
+                    <h4 class="text-center" style="color: black;"><bold>Samsung Galaxy S21+ 5G 8/128GB</bold></h4><br>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Violet</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Silver</a>
+                    <h3 class="text-center" style="color: rgb(224, 61, 20);">17.990.000 ₫</h3>
+                    <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                    <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                </div> 
+            </div>  
+        </div>
+    </div>
+        <hr style="height:3px;border:none;color:#333;background-color:#333;" />
+                <!-- sản phẩm PC -->
+        <div class="container">
+        <h2>SamSung:</h2>
+        <div class="row"> 
+            <div class="col-sm-6 col-md-3"> 
+                <div class="products"><img style="width: 100%" src="../image/SamSung/Samsung-Galaxy-A52s-5G1.jpg" alt=""> 
+                    <h4 class="text-center" style="color:black;"><bold>Samsung Galaxy A52s 5G</bold></h4><br>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">White</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Violet</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Green</a>
+                    <h3 class="text-center" style="color: rgb(224, 61, 20);">8.990.000 ₫</h3>
+                    <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                    <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                </div> 
+            </div> 
+            <div class="col-sm-6 col-md-3"> 
+                <div class="products"><img style="width: 100%" src="../image/SamSung/Samsung-Galaxy-S21-FE.jpg" alt=""> 
+                    <h4 class="text-center" style="color: black;"><bold>Samsung Galaxy S21 FE 5G 8/256GB</bold></h4><br>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">White</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Graphite</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Green</a>
+                    <h3 class="text-center" style="color: rgb(224, 61, 20);">15.990.000 ₫</h3>
+                    <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                    <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                </div> 
+            </div>
+            <div class="col-sm-6 col-md-3"> 
+                <div class="products"><img style="width: 100%" src="../image/SamSung/Samsung-Galaxy-S21Plus.jpg" alt=""> 
+                    <h4 class="text-center" style="color: black;"><bold>Samsung Galaxy S21+ 5G 8/128GB</bold></h4><br>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Violet</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Silver</a>
+                    <h3 class="text-center" style="color: rgb(224, 61, 20);">17.990.000 ₫</h3>
+                    <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                    <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                </div> 
+            </div> 
+            <div class="col-sm-6 col-md-3"> 
+                <div class="products"><img style="width: 100%" src="../image/SamSung/Samsung-Galaxy-Z-Fold-2-DB.jpg" alt=""> 
+                    <h4 class="text-center" style="color: black;"><bold>Samsung Galaxy Z Fold 2 5G Phiên bản mùa hè </bold></h4><br>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                    <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Bronze</a>
+                    <h3 class="text-center" style="color: rgb(224, 61, 20);">33.000.000 ₫</h3>
+                    <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                    <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                </div> 
+            </div>  
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success" ><a href="../html/Samsung.html" style="color: aliceblue;">Xem thêm >></a></button> 
+    </div> 
+        <hr style="height:3px;border:none;color:#333;background-color:#333;" />
+        <div class="container">
+            <h2>Oppo:</h2>
+            <div class="row"> 
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="products"><img style="width: 100%" src="../image/Oppo/Oppo-A16-Sil.jpg" alt=""> 
+                        <h4 class="text-center" style="color:black;"><bold>OPPO A16</bold></h4><br>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Silver</a>
+                        <h3 class="text-center" style="color: rgb(224, 61, 20);">3.990.000 ₫</h3>
+                        <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                        <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                    </div> 
+                </div> 
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="products"><img style="width: 100%" src="../image/Oppo/OPPO-Reno7 5G-ble.jpg" alt=""> 
+                        <h4 class="text-center" style="color: black;"><bold>OPPO Reno7 5G</bold></h4><br>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Blue</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                        <h3 class="text-center" style="color: rgb(224, 61, 20);">12.990.000 ₫</h3>
+                        <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                        <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                    </div> 
+                </div>
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="products"><img style="width: 100%" src="../image/Oppo/OPPO-A94-Pur-.jpg" alt=""> 
+                        <h4 class="text-center" style="color: black;"><bold>OPPO A94 </bold></h4><br>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Purple</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                        <h3 class="text-center" style="color: rgb(224, 61, 20);">5.990.000 ₫</h3>
+                        <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                        <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                    </div> 
+                </div> 
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="products"><img style="width: 100%" src="../image/Oppo/OPPO-Reno6-Z-ble-1.jpg" alt=""> 
+                        <h4 class="text-center" style="color: black;"><bold>OPPO Reno6 Z 5G </bold></h4><br>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Silver</a>
+                        <h3 class="text-center" style="color: rgb(224, 61, 20);">7.990.000 ₫</h3>
+                        <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                        <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                    </div> 
+                </div>  
+            </div>
+            <br>
+            <button type="submit" class="btn btn-success" ><a href="../html/Oppo.html" style="color: aliceblue;">Xem thêm >></a></button> 
+        </div>
+        <hr style="height:3px;border:none;color:#333;background-color:#333;" />
+        <div class="container">
+            <h2>Iphone:</h2>
+            <div class="row"> 
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="products"><img style="width: 100%" src="../image/Iphone/Iphone13ProMaxBle.jpg" alt=""> 
+                        <h4 class="text-center" style="color:black;"><bold>iPhone 13 Pro Max 128GB</bold></h4><br>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Graphite</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Sierra</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">AlPine Green</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Gold</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Silver</a>
+                        <h3 class="text-center" style="color: rgb(224, 61, 20);">30.490.000 ₫</h3>
+                        <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                        <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                    </div> 
+                </div> 
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="products"><img style="width: 100%" src="../image/Iphone/Iphone13ProMaxSir.jpg" alt=""> 
+                        <h4 class="text-center" style="color: black;"><bold>IPhone 13 Pro Max 1TB</bold></h4><br>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Graphite</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Sierra</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">AlPine Green</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Gold</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Silver</a>
+                        <h3 class="text-center" style="color: rgb(224, 61, 20);">42.990.000 ₫</h3>
+                        <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                        <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                    </div> 
+                </div>
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="products"><img style="width: 100%" src="../image/Iphone/Iphone11.jpg" alt=""> 
+                        <h4 class="text-center" style="color: black;"><bold>IPhone 11 128GB</bold></h4><br>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">White</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Green</a>
+                        <h3 class="text-center" style="color: rgb(224, 61, 20);">14.990.000 ₫</h3>
+                        <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                        <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                    </div> 
+                </div> 
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="products"><img style="width: 100%" src="../image/Iphone/Iphone12.jpg" alt=""> 
+                        <h4 class="text-center" style="color: black;"><bold>IPhone 12 64GB</bold></h4><br>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Red</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">White</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Blue</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Green</a>
+                        <h3 class="text-center" style="color: rgb(224, 61, 20);">16.690.000 ₫</h3>
+                        <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                        <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                    </div> 
+                </div>  
+            </div>
+            <br>
+            <button type="submit" class="btn btn-success" ><a href="../html/Iphone.html" style="color: aliceblue;">Xem thêm >></a></button> 
+        </div>
+        <hr style="height:3px;border:none;color:#333;background-color:#333;" />
+        <div class="container">
+            <h2>Realme:</h2>
+            <div class="row"> 
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="products"><img style="width: 100%" src="../image/Realme/Realme-C21Y.jpg" alt=""> 
+                        <h4 class="text-center" style="color:black;"><bold>Realme C21Y (4-64GB)</bold></h4><br>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Blue</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                        <h3 class="text-center" style="color: rgb(224, 61, 20);">3.290.000 ₫</h3>
+                        <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                        <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                    </div> 
+                </div> 
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="products"><img style="width: 100%" src="../image/Realme/realme-5i-green.jpg" alt=""> 
+                        <h4 class="text-center" style="color: black;"><bold>Realme 5i 3GB-32GB</bold></h4><br>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Blue</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Green</a>
+                        <h3 class="text-center" style="color: rgb(224, 61, 20);">1.990.000 ₫</h3>
+                        <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                        <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                    </div> 
+                </div>
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="products"><img style="width: 100%" src="../image/Realme/realme-6pro.png" alt=""> 
+                        <h4 class="text-center" style="color: black;"><bold>Realme 6 Pro </bold></h4><br>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Red</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Blue</a>
+                        <h3 class="text-center" style="color: rgb(224, 61, 20);">7.990.000 ₫</h3>
+                        <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                        <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                    </div> 
+                </div> 
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="products"><img style="width: 100%" src="../image/Realme/realme-8-Pro-Blu.jpg" alt=""> 
+                        <h4 class="text-center" style="color: black;"><bold>Realme 8 Pro</bold></h4><br>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Blue</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                        <h3 class="text-center" style="color: rgb(224, 61, 20);">7.250.000 ₫</h3>
+                        <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                        <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                    </div> 
+                </div>  
+            </div>
+            <br>
+            <button type="submit" class="btn btn-success" ><a href="../html/Realme.html" style="color: aliceblue;">Xem thêm >></a></button> 
+        </div>
+        <hr style="height:3px;border:none;color:#333;background-color:#333;" />
+        <div class="container">
+            <h2>Vivo:</h2>
+            <div class="row"> 
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="products"><img style="width: 100%" src="../image/Vivo/Vivo-V23e.jpg" alt=""> 
+                        <h4 class="text-center" style="color:black;"><bold>Vivo V23e </bold></h4><br>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Blue</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                        <h3 class="text-center" style="color: rgb(224, 61, 20);">7.490.000 ₫</h3>
+                        <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                        <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                    </div> 
+                </div> 
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="products"><img style="width: 100%" src="../image/Vivo/vivo-V23-5G.jpg" alt=""> 
+                        <h4 class="text-center" style="color: black;"><bold>Vivo V23 5G</bold></h4><br>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Gold</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                        <h3 class="text-center" style="color: rgb(224, 61, 20);">12.490.000 ₫</h3>
+                        <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                        <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                    </div> 
+                </div>
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="products"><img style="width: 100%" src="../image/Vivo/Vivo-Y21s.jpg" alt=""> 
+                        <h4 class="text-center" style="color: black;"><bold>Vivo Y21s 4GB/128GB</bold></h4><br>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">White</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Blue</a>
+                        <h3 class="text-center" style="color: rgb(224, 61, 20);">4.790.000 ₫ </h3>
+                        <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                        <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                    </div> 
+                </div> 
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="products"><img style="width: 100%" src="../image/Vivo/Vivo-Y33S.jpg" alt=""> 
+                        <h4 class="text-center" style="color: black;"><bold>Vivo Y33s</bold></h4><br>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Blue</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Yellow</a>
+                        <a href="" style="border-radius: 25px; border: 1px solid #2891f3; padding:0 8px; margin-bottom: 5px">Black</a>
+                        <h3 class="text-center" style="color: rgb(224, 61, 20);">6.690.000 ₫</h3>
+                        <button type="button" class="btn btn-success" ><a href="../html/GioHang.html" target="_blank" style="color: #ffff;">Mua ngay</a></button>
+                        <button type="button"  class="btn btn-success" id="TG_2673">Trả góp</button>
+                    </div> 
+                </div>  
+            </div>
+            <br>
+            <button type="submit" class="btn btn-success" ><a href="../html/Vivo.html" style="color: aliceblue;">Xem thêm >></a></button> 
+        </div>
+    <br><br>
+    <!-- Footer -->
+        <footer class="container-fluid" style="background-color:#6c757d;color: black; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 18px;">
+                    <div class="col-md-6">
+                        <h3>VỀ CHÚNG TÔI</h3>
+                        <p>Shop Điện thoại D&D</p>
+                        <p>Hotline: 035.543.5331</p>
+                        <p>Email: thiendat9dthcstanhai@gmail.com</p>
+                        <p>Địa chỉ: 12 Nguyễn Văn Bảo - Phường 4 - Quận Gò Vấp - TP.HCM</p>
+                        <a href="../html/Sitemap.html" style="color: black;">Sitemap</a>
+                        <div class="list-icon" style="font-size: 30px; border-radius: 1px solid;">
+                            <i class="fa fa-facebook-official"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-google"></i>
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                        <p>Copyright 2022 © Thiết kế Website bởi: Trần Thiện Đạt</p>
+                        <br>
+                        
+                    </div>      
+        </footer>
+    <div class="modal fade" id="logInModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 style="text-align: center;">Log In</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="form-horizontal">
+                        <div class="form-group">
+                            <div id="thongbao" class="text-danger" style="text-align: center;"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtUserName" class="control-label col-xs-3">UserName</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="txtUserName" placeholder="UserNamme">
+                                <span id="tbUserName" class="text-danger">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtPass" class="control-label col-xs-3">PassWord</label>
+                            <div class="col-md-9">
+                                <input type="password" class="form-control" id="txtPass" placeholder="PassWord">
+                                <span id="tbPass" class="text-danger">*</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-lg btn-block" id="btnDangNhap">Đăng nhập </button> 
+                    </form>
+                    <div class="modal-footer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
