@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/CK - Copy.js"></script>
+    
+        <script>
+    
+            let i = 0
+    
+            let sp1 = {tensp:"IPhone 13 Pro Max 128GB", hinhanh:"../image/SanPhamBanChay/IP13.jpeg", soluong:1, dongia:30490000 }
+            let sp2 = {tensp:"OPPO A94", hinhanh:"../image/SanPhamBanChay/OPPO-A94-Pur-11.jpg", soluong:1, dongia:5990000}
+            let sp3 = {tensp:"Realme C21Y (4-64GB)", hinhanh:"../image/SanPhamBanChay/Realme-C21Y-blk-1.jpg", soluong:1, dongia:3290000}
+            let sp4 = {tensp:"Samsung Galaxy S21+ 5G 8/128GB", hinhanh:"../image/SanPhamBanChay/SS-Galaxy-S21Plus-Purl-1.jpg", soluong:1, dongia:17990000}         
+    
+            let dssp = [sp1, sp2, sp3, sp4]
+    
+    
+            function napDSSP(dssp){
+                dssp.forEach(sp => {
+                    let row = "<tr><td class='text-center'>"+(++i)+"</td><td>"+sp.tensp+"</td><td><img src='"+sp.hinhanh+"' width='150' alt='Hinh anh'></td><td contenteditable='true' onkeyup='getTongtien()'>"+sp.soluong+"</td><td class='text-right'>"+sp.dongia+"</td></tr>"
+
+                    let myTable = document.getElementById("tbl")
+    
+                    let newRow = myTable.insertRow(myTable.rows.length)
+    
+                    newRow.innerHTML  = row
+    
+                });
+            }
+    
+            function getTongtien(){
+                let tongtien = 0
+                let myTable = document.getElementById("tbl")
+                let rows = myTable.rows.length
+    
+                for(let i = 0; i < rows; i++){
+                    let soluong = myTable.rows[i].cells[3].innerHTML
+                    let dongia = myTable.rows[i].cells[4].innerHTML
+                    let thanhtien = soluong * dongia
+                    tongtien += thanhtien
+                }
+    
+                document.getElementById("txtTongTien").innerHTML = tongtien
+            }
+            
+            window.onload = function(){
+                napDSSP(dssp)
+                getTongtien()
+            }
+    
+        </script>
+    
+    </head>
+<body>
+    <!-- Header -->
+    <div>  
+        <header>
+            <div class="col-md-12" style="background-color:  #6c757d;" >
+                <div class="col-md-6">
+                    <nav class="navbar-collapse">
+                        <ul class="navbar-nav nav " style="margin-top: 10px;">
+                            <li style="margin-top: -15px;"><a href="../html/index.html" id="dn"><img src="../image/Logo.jpg" alt="" width="200px" height="100px"></a></li>
+                            <li> <a class="dropdown-toggle" data-toggle="dropdown" style="color:black;"><img src="../image/product.png" alt="">Sản Phẩm
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu ">
+                                    <li><a href="../html/Samsung.html" target="blank">Samsung</a></li>
+                                    <li><a href="../html/Oppo.html" target="blank">Oppo</a></li>
+                                    <li><a href="../html/Iphone.html" target="blank">Iphone</a></li>
+                                    <li><a href="../html/Realme.html" target="blank">Realme</a></li>
+                                    <li><a href="../html/Vivo.html" target="blank">Vivo</a></li>
+                                </ul></li>
+                            <li><a href="../html/GioiThieu.html" target="_blank" style="color: black;"><img src="../image/introduct.png" alt="">Giới thiệu</a></li>
+                            <li><a href="../html/Contact.html" target="_blank" style="color: black;"><img src="../image/contact.png" alt="">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-6 float-sm-right form-group">
+                    <nav style="float: right;" class="navbar-collapse">
+                        <ul class="navbar-nav nav "style="margin-top: 10px;">
+                            <li style="margin-top: 10px;"><form class="form-inline float-sm-right">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="../image/search.png" alt=""></button>
+                            </form>
+                            </li>
+                            <li><a href="../html/DangKy.html" target="_blank" id="dn" style="color: black;"><img src="../image/register.png" alt="">Đăng ký</a></li>
+                            <li><a href="#" id="btnLogIn" style="color: black;"><img src="../image/login.png" alt="">Đăng nhập</a></li>
+                            <li><a href="../html/GioHang.html" target="_blank" id="btnShop" style="color: black;" target="blank"><img src="../image/shop.png" alt="">Giỏ hàng</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+           <div class="btn-group btn-group-justified" style="background-color: #333;"  >
+            <a href="../html/Iphone.html" target="blank" class="btn btn-block " style="color: #ffff; font-size: 20px;">Iphone</a>
+            <a href="../html/Samsung.html" target="blank" class="btn btn-block" style="color: #ffff;font-size: 20px;">SamSung</a>
+            <a href="../html/Oppo.html" target="blank" class="btn btn-block" style="color: #ffff;font-size: 20px;">Oppo</a>
+            <a href="../html/Realme.html" target="blank" class="btn btn-block" style="color: #ffff;font-size: 20px;">Realme</a>
+            <a href="../html/Vivo.html" target="blank" class="btn btn-block" style="color: #ffff;font-size: 20px;">Vivo</a>
+           </div>
+        </header>       
+    </div>
+    <!-- Body -->
+      <!-- Sản phẩm bán chạy-->
+      <div class="container" style="background-color:azure;">
+        <div class="col-md-8">
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Ten SP</th>
+                        <th>Hinh anh</th>
+                        <th>So luong</th>
+                        <th>Don gia</th>
+                    </tr>
+                </thead>
+                <tbody id="tbl">
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-4">
+            <div>
+                <h3 class="text-center">HÓA ĐƠN</h3>
+            </div>
+          <div class="row form-group">
+              <h3 class="col-md-5">Tổng tiền:</h3>
+              <h3 class="col-md-6" id="txtTongTien" style="color: red;">0</h3>
+              <h3 class="col-md-1 text-left" style="color: red;">Đ</h3>
+          </div>
+          
+          <div class="row form-group">
+            <label for="txtMaGG" class="col-md-4" style="margin-top: 6px;">Mã giảm giá: </label>
+            <input type="text" id="txtMaGG" class="col-md-4" style="margin-top: 3px;">
+            <button style="margin-left: 10px;" class="btn btn-success col-md-3">Đồng ý</button>
+          </div>
+          <button class="btn btn-block btn-success">Tiến hành đặt hàng:</button>
+        </div>
+    </div>
+    <br>
+    <!-- Footer -->
+    <footer class="container-fluid" style="background-color:#6c757d;color: black; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 18px;">
+        <div class="col-md-6">
+            <h3>VỀ CHÚNG TÔI</h3>
+            <p>Shop Điện thoại D&D</p>
+            <p>Hotline: 035.543.5331</p>
+            <p>Email: thiendat9dthcstanhai@gmail.com</p>
+            <p>Địa chỉ: 12 Nguyễn Văn Bảo - Phường 4 - Quận Gò Vấp - TP.HCM</p>
+            <div class="list-icon" style="font-size: 30px; border-radius: 1px solid;">
+                <i class="fa fa-facebook-official"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-google"></i>
+                <i class="fa fa-twitter"></i>
+              </div>
+            <p>Copyright 2022 © Thiết kế Website bởi: Trần Thiện Đạt</p>
+            <br>
+            
+        </div>      
+    </footer>
+
+        <div class="modal fade" id="logInModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 style="text-align: center;">Log In</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" class="form-horizontal">
+                            <div class="form-group">
+                                <div id="thongbao" class="text-danger" style="text-align: center;"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtUserName" class="control-label col-xs-3">UserName</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="txtUserName" placeholder="UserNamme">
+                                    <span id="tbUserName" class="text-danger">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtPass" class="control-label col-xs-3">PassWord</label>
+                                <div class="col-md-9">
+                                    <input type="password" class="form-control" id="txtPass" placeholder="PassWord">
+                                    <span id="tbPass" class="text-danger">*</span>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-lg btn-block">Đăng nhập </button> 
+                        </form>
+                        <div class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
